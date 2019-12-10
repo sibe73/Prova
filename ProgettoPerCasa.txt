@@ -1,0 +1,11 @@
+- Sistema A con cui l'utente interagisce tramite console (o GUI)
+- Sistema B dialoga con A attraverso scambi di messaggi (che simuliamo al momento come chiamate a funzione)
+- I messaggi che A manda a B dipendono dagli input dell'utente: potremo inviare M1, M2, M3 con differenti parametri
+- I messaggi inviati da A devono essere schedulati ed inviati a precisi istanti temporali
+- B, alla ricezione di ogni messaggio, deve validarlo e processarlo
+- Se il messaggio non è valido, B deve rispondere col messaggio NACK, se è valido deve rispondere col messaggio ACK
+- Il tempo di processing è diverso per ogni messaggio
+- B deve rispondere solo dopo che il messaggio è stato processato
+- A, all'invio e ricezione di ogni messaggio, deve stamparlo su console e file
+- L'intera simulazione inizia chiamando il metodo startSimulation
+- L'intera simulazione termina chiamando il metodo stopSimulation
